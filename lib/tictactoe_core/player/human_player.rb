@@ -1,0 +1,16 @@
+module TicTacToeCore
+  module Player
+    class HumanPlayer
+      attr_reader :marker
+
+      def initialize(ui, marker)
+        @ui = ui
+        @marker = marker
+      end
+
+      def next_move(board)
+        @ui.prompt_for_move(board, @marker)
+      end
+    end
+  end
+end

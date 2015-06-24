@@ -1,9 +1,9 @@
 require 'spec_helper'
-require 'tictactoe/ai/minimax_ai'
-require 'tictactoe/factory/players_factory'
-require 'tictactoe/game'
-require 'tictactoe/board'
-require 'tictactoe/board_helper'
+require 'tictactoe_core/ai/minimax_ai'
+require 'tictactoe_core/factory/players_factory'
+require 'tictactoe_core/game'
+require 'tictactoe_core/board'
+require 'tictactoe_core/board_helper'
 
 describe 'check full games end in draw with minimax', :slow => true do
   let(:ui) { TicTacToe::Fakes::UiMock.new }
