@@ -6,7 +6,7 @@ require 'tictactoe/player/computer_player'
 module TicTacToe
   describe GameSetup do
     let(:ui) { Fakes::UiMock.new }
-    let(:ai) { Player::RandomAi.new }
+    let(:ai) { instance_double(TicTacToe::Ai::MinimaxAi) }
     let(:game_setup) { GameSetup.new(ui, ai) }
     let(:human_player) { Player::HumanPlayer }
     let(:computer_player) { Player::ComputerPlayer }

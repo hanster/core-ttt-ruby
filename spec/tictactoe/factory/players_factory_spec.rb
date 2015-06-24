@@ -8,7 +8,7 @@ module TicTacToe
   module Factory
     describe PlayersFactory do
       let(:ui) { Fakes::UiMock.new }
-      let(:ai) { Player::RandomAi.new }
+      let(:ai) { instance_double(TicTacToe::Ai::MinimaxAi) }
       let(:pf) { PlayersFactory.new(ui, ai) }
       let(:human) { Player::HumanPlayer }
       let(:computer) { Player::ComputerPlayer }

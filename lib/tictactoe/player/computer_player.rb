@@ -2,7 +2,7 @@ module TicTacToe
   module Player
     class ComputerPlayer
       attr_reader :marker
-      def initialize(ai = RandomAi.new, marker)
+      def initialize(ai, marker)
         @ai = ai
         @marker = marker
       end
@@ -15,13 +15,7 @@ module TicTacToe
       private
 
       def first_five_moves_for_four_by_four?(board)
-        board.available_moves.count > 11 && board.dimension == 4
-      end
-    end
-
-    class RandomAi
-      def calculate_next_move(board, marker)
-        board.available_moves.sample
+        board.available_moves.count > 11
       end
     end
   end

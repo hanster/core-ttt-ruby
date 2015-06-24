@@ -14,13 +14,39 @@ module TicTacToe
         # check 1 move deep for a winning or blocking move
         # prefer this to a depth first search to improve speed
         calculate_winning_or_blocking_move(board, marker)
-        return winning_or_blocking_next_move if winning_or_blocking_next_move?
+        return winning_or_blocking_next_move if winning_or_blocking_next_move
         calculate_next_best_move(board, marker)
       end
 
       private
 
       attr_reader :blocking_move, :winning_move
+
+      def calculate_winning_or_blocking_move(board, marker)
+        @winning_move = next_winning_move(board, marker)
+        @blocking_move = block_next_winning_move(board, marker)
+      end
+
+      def winning_or_blocking_next_move
+        # leaking nil out!
+        winning_move || blocking_move
+      end
+
+      def calculate_next_best_move(board, marker)
+        best_move = calculate_next_move_score(board, marker)
+        best_move[:move]
+      end
+
+      def next_winning_move(board, marker)
+        board.available_moves.find do |move|
+          next_board = board.move(move, marker)
+          next_board.won?(marker)
+        end
+      end
+
+      def block_next_winning_move(board, marker)
+        next_winning_move(board, opponent(marker))
+      end
 
       def calculate_next_move_score(board, marker, alpha = DEFAULT_ALPHA, beta = DEFAULT_BETA, depth = 7)
         best_move = {:move => :NO_BEST_MOVE, :score => MINIMAX_STARTING_VALUE }
@@ -36,37 +62,6 @@ module TicTacToe
         end
 
         return best_move
-      end
-
-      def winning_or_blocking_next_move
-        return winning_move if winning_move
-        return blocking_move if blocking_move
-      end
-
-      def winning_or_blocking_next_move?
-        winning_move || blocking_move
-      end
-
-      def calculate_winning_or_blocking_move(board, marker)
-        @winning_move = next_winning_move(board, marker)
-        @blocking_move = block_next_winning_move(board, marker)
-      end
-
-      def calculate_next_best_move(board, marker)
-        best_move = calculate_next_move_score(board, marker)
-        best_move[:move]
-      end
-
-      def block_next_winning_move(board, marker)
-        opponent = opponent(marker)
-        next_winning_move(board, opponent)
-      end
-
-      def next_winning_move(board, marker)
-        board.available_moves.find do |move|
-          next_board = board.move(move, marker)
-          next_board.won?(marker)
-        end
       end
 
       def score(board, marker, move, alpha = DEFAULT_ALPHA, beta = DEFAULT_BETA, depth)
