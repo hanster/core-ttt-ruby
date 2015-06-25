@@ -1,9 +1,9 @@
 require 'spec_helper'
-require 'tictactoe_core/ai/minimax_ai'
-require 'tictactoe_core/factory/players_factory'
-require 'tictactoe_core/game'
-require 'tictactoe_core/board'
-require 'tictactoe_core/board_helper'
+require 'tic_tac_toe_core/ai/minimax_ai'
+require 'tic_tac_toe_core/factory/players_factory'
+require 'tic_tac_toe_core/game'
+require 'tic_tac_toe_core/board'
+require 'tic_tac_toe_core/board_helper'
 
 module TicTacToeCore
   describe 'check full games end in draw with minimax', :slow => true do

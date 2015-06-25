@@ -1,4 +1,4 @@
-require 'tictactoe_core/marker'
+require 'tic_tac_toe_core/marker'
 
 module TicTacToeCore
   module Ai

@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'tictactoe_core/ai/minimax_ai'
-require 'tictactoe_core/board'
-require 'tictactoe_core/board_helper'
+require 'tic_tac_toe_core/ai/minimax_ai'
+require 'tic_tac_toe_core/board'
+require 'tic_tac_toe_core/board_helper'
 
 module TicTacToeCore
   module Ai

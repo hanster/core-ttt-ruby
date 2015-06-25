@@ -1,5 +1,5 @@
-require 'tictactoe_core/board'
-require 'tictactoe_core/game_types'
+require 'tic_tac_toe_core/board'
+require 'tic_tac_toe_core/game_types'
 
 module TicTacToeCore
   module Factory

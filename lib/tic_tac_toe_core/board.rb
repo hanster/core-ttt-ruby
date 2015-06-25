@@ -1,5 +1,5 @@
-require 'tictactoe_core/marker'
-require 'tictactoe_core/win_case_calculator'
+require 'tic_tac_toe_core/marker'
+require 'tic_tac_toe_core/win_case_calculator'
 
 module TicTacToeCore
   class Board

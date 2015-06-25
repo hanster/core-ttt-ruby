@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'tictactoe_core/board'
+require 'tic_tac_toe_core/board'
 
 module TicTacToeCore
   class BoardHelper

@@ -1,7 +1,7 @@
-require 'tictactoe_core/marker'
-require 'tictactoe_core/game_types'
-require 'tictactoe_core/player/computer_player'
-require 'tictactoe_core/player/human_player'
+require 'tic_tac_toe_core/marker'
+require 'tic_tac_toe_core/game_types'
+require 'tic_tac_toe_core/player/computer_player'
+require 'tic_tac_toe_core/player/human_player'
 
 module TicTacToeCore
   module Factory

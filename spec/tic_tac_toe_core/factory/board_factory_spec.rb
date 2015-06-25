@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'tictactoe_core/factory/board_factory'
+require 'tic_tac_toe_core/factory/board_factory'
 
 
 module TicTacToeCore

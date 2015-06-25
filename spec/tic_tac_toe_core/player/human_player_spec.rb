@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'tictactoe_core/player/human_player'
-require 'tictactoe_core/board'
-require 'tictactoe_core/marker'
+require 'tic_tac_toe_core/player/human_player'
+require 'tic_tac_toe_core/board'
+require 'tic_tac_toe_core/marker'
 
 module TicTacToeCore
   module Player

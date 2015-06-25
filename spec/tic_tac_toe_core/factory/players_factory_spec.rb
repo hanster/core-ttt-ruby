@@ -1,8 +1,8 @@
 require 'spec_helper'
-require 'tictactoe_core/factory/players_factory'
-require 'tictactoe_core/fakes/ui_mock'
-require 'tictactoe_core/player/computer_player'
-require 'tictactoe_core/player/human_player'
+require 'tic_tac_toe_core/factory/players_factory'
+require 'tic_tac_toe_core/fakes/ui_mock'
+require 'tic_tac_toe_core/player/computer_player'
+require 'tic_tac_toe_core/player/human_player'
 
 module TicTacToeCore
   module Factory

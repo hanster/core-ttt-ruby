@@ -1,7 +1,7 @@
-require 'tictactoe_core/game_types'
-require 'tictactoe_core/factory/players_factory'
-require 'tictactoe_core/factory/board_factory'
-require 'tictactoe_core/game'
+require 'tic_tac_toe_core/game_types'
+require 'tic_tac_toe_core/factory/players_factory'
+require 'tic_tac_toe_core/factory/board_factory'
+require 'tic_tac_toe_core/game'
 
 module TicTacToeCore
   class GameSetup

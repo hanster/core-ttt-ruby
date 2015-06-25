@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'tictactoe_core/game_setup'
-require 'tictactoe_core/fakes/ui_mock'
-require 'tictactoe_core/player/computer_player'
+require 'tic_tac_toe_core/game_setup'
+require 'tic_tac_toe_core/fakes/ui_mock'
+require 'tic_tac_toe_core/player/computer_player'
 
 module TicTacToeCore
   describe GameSetup do

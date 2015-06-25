@@ -1,8 +1,8 @@
 require 'spec_helper'
-require 'tictactoe_core/player/computer_player'
-require 'tictactoe_core/marker'
-require 'tictactoe_core/board_helper'
-require 'tictactoe_core/ai/minimax_ai'
+require 'tic_tac_toe_core/player/computer_player'
+require 'tic_tac_toe_core/marker'
+require 'tic_tac_toe_core/board_helper'
+require 'tic_tac_toe_core/ai/minimax_ai'
 
 module TicTacToeCore
   module Player

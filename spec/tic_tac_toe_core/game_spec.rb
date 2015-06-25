@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'tictactoe_core/game'
-require 'tictactoe_core/fakes/ui_mock'
-require 'tictactoe_core/board_helper'
+require 'tic_tac_toe_core/game'
+require 'tic_tac_toe_core/fakes/ui_mock'
+require 'tic_tac_toe_core/board_helper'
 
 module TicTacToeCore
   describe Game do
