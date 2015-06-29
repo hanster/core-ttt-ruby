@@ -1,4 +1,4 @@
-# Core::Ttt::Ruby
+# TicTacToeCore
 
 Core logic for TicTacToe
 
@@ -7,7 +7,7 @@ Core logic for TicTacToe
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'core-ttt-ruby'
+gem 'tic_tac_toe_core'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install core-ttt-ruby
+    $ gem install tic_tac_toe_core
 
 ## Usage
 
@@ -30,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/hanster/core-ttt-ruby/fork )
+1. Fork it ( https://github.com/hanster/tic-tac-toe-core/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
